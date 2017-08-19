@@ -5,11 +5,11 @@ USE lost_and_found;
 -- Created the table "stuff" 
 CREATE TABLE stuff (
 	id int AUTO_INCREMENT NOT NULL,
-	type varchar NOT NULL,
-	color varchar NOT NULL,
+	itemtype varchar (99) NOT NULL,
+	color varchar (255) NOT NULL,
 	size varchar (3) NOT NULL,
-	attrib varchar NOT NULL,
+	attrib varchar (255) NOT NULL,
 	lost boolean,
 	location point,
 	PRIMARY KEY (id)
-)
+);
