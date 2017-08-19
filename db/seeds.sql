@@ -1,3 +1,7 @@
-INSERT INTO users (name, item, fb_key) VALUES ("Joe", "Sweatshirt", "23525252");
-INSERT INTO users (name, item, fb_key) VALUES ("Bob", "Watch", "930457");
-INSERT INTO users (name, item, fb_key) VALUES ("Fred", "Car", "09283485");
+INSERT INTO stuff (itemtype, color, size, attrib, lost) 
+VALUES ("Shirt", "Red", "M", "Pokemon", true);
+INSERT INTO stuff (itemtype, color, size, attrib, lost) 
+VALUES ("Jacket", "Black", "L", "Fringe", false);
+INSERT INTO stuff (itemtype, color, size, attrib, lost) 
+VALUES ("Scarf", "Blue", "S", "And black", true);
+
