@@ -14,7 +14,7 @@ CREATE TABLE users (
 
 
 CREATE TABLE items (
-	id int AUTO_INCREMENT,
+	itemid int AUTO_INCREMENT,
 	type varchar NOT NULL,
 	size varchar NOT NULL,
 	color varchar NOT NULL,
@@ -23,6 +23,6 @@ CREATE TABLE items (
 	-- SRID is an int expression representing the SRID of the--
 	--geography instance you wish to return. --
 	location point,
-	PRIMARY KEY (id),
+	PRIMARY KEY (itemid),
 	FOREIGN KEY (userid) REFERENCES users (userid)
 );
