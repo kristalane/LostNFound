@@ -2,6 +2,7 @@
   display: inline-block;
   float: none;
   vertical-align: top;
+  text-align: center;
 }
 
 .navbar .navbar-collapse {
