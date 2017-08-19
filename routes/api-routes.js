@@ -7,10 +7,15 @@ module.exports = function(app) {
 
 
     app.get("/", function(req, res) {
-
         lf.findAll({}).then(function(results) {
             res.json(results)
         });
+    });
+
+    app.post("/api/lost", function(req, res){
+        lf.create({
+            //waiting for db confirmation
+        })
 
     });
 
