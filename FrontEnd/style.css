@@ -1,0 +1,110 @@
+body {
+	background-color: #6D1A36;
+}
+
+p{
+	color: #FCD0A1;
+}
+
+.title{
+
+	color: #53917E;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.navbar-toggle{
+	border: none;
+	background: transparent;
+	cursor: pointer;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #FCD0A1;
+  text-align: left;
+  padding: 8px;
+}
+
+.submit {
+  display: block;
+}
+
+caption {
+  background-color: #B1B695;
+  color: white;
+  font-size: 20px;
+  padding-left: 20px;
+  text-align: center;
+}
+
+.heading {
+  background-color: #53917E;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+  margin-top: 0px;
+}
+
+.formHead {
+  padding: 10px;
+}
+
+#schedule, #addTrain {
+  border: 2px solid #53917E;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.formHead {
+  padding: 10px;
+}
+
+h1 {
+  background-color: #53917E;
+  color: white;
+  text-align: center;
+  margin-top: 0px;
+  padding: 20px;
+}
+
+
+
+.submit {
+  border: none;
+  background-color: #53917E;
+  padding: 10px;
+  color: white;
+  margin-top: 30px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+#mapDisplay{
+	
+	align-content: center;
+	float: center;
+}
+
+#map {
+
+  align-content: center;
+  height: 400px;
+  width: 60%;
+  float: center;
+
+}
