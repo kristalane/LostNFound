@@ -1,22 +1,33 @@
 var db = require("../models");
 
-
+// Routes =============================================================
 module.exports = function(app) {
-
-    var lf = db.item
-    // console.log(lf)
-
-
-    app.get("/", function(req, res) {
-        lf.findAll({}).then(function(results) {
-            res.json(results)
-        });
+  app.get("/api/stuff", function(req, res) {
+    db.Stuff.findAll({}).then(function(dbStuff) {
+      res.redirect("/");
     });
+  });
 
-    // app.post("/api/lost", function(req, res){
-    //     lf.create({
-    //         //waiting for db confirmation
-    //     })
+  app.post("/api/stuff", function(req, res) {
+    db.Stuff.create({
+      itemtype: req.body.itemtype,
+      size: req.body.size,
+      color: req.body.color,
+      location:req.body.location,
+      attrib: req.body.attrib
+    }).then(function(dbStuff) {
+      res.redirect("/");
+    });
+  });
 
-    };
+  app.delete("/api/stuff/:id", function(req, res) {
+    db.Stuff.destroy({
+      where: {
+        id: req.params.id
+      }
+    }).then(function(dbStuff) {
+      res.redirect("/");
+    });
+  });
 
+};

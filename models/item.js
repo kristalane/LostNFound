@@ -1,24 +1,10 @@
 module.exports = function(sequelize, DataTypes) {
-	
-  var item = sequelize.define("item", {
-    itemtype: {
-      type: DataTypes.STRING
-    },
-    color: {
-      type: DataTypes.STRING
-    },
-    size: {
-      type: DataTypes.STRING
-    },
-    attrib: {
-      type: DataTypes.STRING
-    },
-    lost: {
-      type: DataTypes.BOOLEAN
-    },
-    location: {
-      type: DataTypes.STRING
-    }
+  var Stuff = sequelize.define("stuff", {
+    itemtype: DataTypes.STRING,
+    size: DataTypes.STRING,
+    color: DataTypes.STRING,
+    attrib: DataTypes.STRING,
+    location: DataTypes.POINT
   });
-  return item;
+  return Stuff;
 };
