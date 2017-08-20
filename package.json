@@ -1,0 +1,26 @@
+{
+  "name": "lostnfound",
+  "version": "1.0.0",
+  "description": "A simple lost and found app",
+  "main": "auth.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kristalane/LostNFound.git"
+  },
+  "author": "krista lane, zach radford, nick hart",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kristalane/LostNFound/issues"
+  },
+  "homepage": "https://github.com/kristalane/LostNFound#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "method-override": "^2.3.9",
+    "path": "^0.12.7"
+  }
+}
