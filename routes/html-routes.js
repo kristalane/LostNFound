@@ -13,11 +13,13 @@ module.exports = function(app) {
 // this is the root/home page.
 // TODO: add html file name
   app.get("/", function(req, res){
-    res.send("#");
+    console.log("here")
+    res.sendFile(path.resolve(path.join(__dirname, "..", "views", "layouts", "home.html")));
   })
 
 // this route is for a user who says they lost an item - will display all found items.
 // TODO: add html file name
+
   app.get("/lost", function(req, res) {
     db.Stuff.findAll({
       where: {
@@ -40,3 +42,4 @@ module.exports = function(app) {
     });
   });
 };
+
