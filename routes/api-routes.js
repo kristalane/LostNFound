@@ -4,7 +4,7 @@ var db = require("../models");
 module.exports = function(app) {
   app.get("/api/stuff", function(req, res) {
     db.Stuff.findAll({}).then(function(dbStuff) {
-      res.redirect("/");
+      res.json(dbStuff);
     });
   });
 
@@ -16,7 +16,7 @@ module.exports = function(app) {
       location:req.body.location,
       attrib: req.body.attrib
     }).then(function(dbStuff) {
-      res.redirect("/");
+      res.json(dbStuff);
     });
   });
 
@@ -26,7 +26,7 @@ module.exports = function(app) {
         id: req.params.id
       }
     }).then(function(dbStuff) {
-      res.redirect("/");
+      res.json(dbStuff);
     });
   });
 

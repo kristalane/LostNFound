@@ -27,4 +27,14 @@ module.exports = function(sequelize, DataTypes) {
     }
   });
   return Stuff;
+  // return {
+  //   /**
+  //    * Delete the stuff with the given Id
+  //    * @param int id
+  //    * @return Promise
+  //    */
+  //   deleteStuff(id){
+  //     return Stuff.delete({where: {id: id}});
+  //   }
+  // };
 };
