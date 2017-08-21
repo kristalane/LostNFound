@@ -9,6 +9,8 @@ var PORT = process.env.PORT || 8080;
 
 var db = require("./models");
 
+
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
@@ -20,8 +22,8 @@ app.use(express.static("public"));
 app.use(methodOverride("_method"));
 
 
-require("./routes/html-routes.js")(app);
 require("./routes/api-routes.js")(app);
+require("./routes/html-routes.js")(app);
 
 
 db.sequelize.sync().then(function() {
@@ -29,3 +31,4 @@ db.sequelize.sync().then(function() {
     console.log("App listening on PORT " + PORT);
   });
 });
+
