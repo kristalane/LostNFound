@@ -18,7 +18,7 @@ module.exports = function(app) {
 
 // this route is for a user who says they lost an item - will display all found items.
 // TODO: add html file name
-  app.get("/api/lost", function(req, res) {
+  app.get("/lost", function(req, res) {
     db.Stuff.findAll({
       where: {
         lost: false
@@ -30,7 +30,7 @@ module.exports = function(app) {
 
 // this route is for a user who says they found an item - will display all lost items
 // TODO: add html file names
-  app.get("/api/found", function(req, res){
+  app.get("/found", function(req, res){
     db.Stuff.findAll({
       where: {
         lost: true
@@ -39,3 +39,4 @@ module.exports = function(app) {
       res.render("#");
     });
   });
+};
