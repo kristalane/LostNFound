@@ -21,6 +21,10 @@
     "body-parser": "^1.17.2",
     "express": "^4.15.4",
     "method-override": "^2.3.9",
+<<<<<<< HEAD
+=======
+    "mysql": "^2.14.1",
+>>>>>>> b3813128a9f60688958fcc2a7991048fcc6a62b3
     "mysql2": "^1.4.1",
     "path": "^0.12.7",
     "sequelize": "^4.6.0"
