@@ -10,20 +10,32 @@ module.exports = function(app) {
 
   // Each of the below routes just handles the HTML page that the user gets sent to.
 
-  // index route loads view.html
-  app.get("/", function(req, res) {
-    db.Stuff.findAll({}).then(function(dbStuff) {
-      // var hbsObject = {
-      //   burgers: dbBurger
-      // };
-      // console.log(hbsObject);
-      // res.render("index", hbsObject);
+// this is the root/home page.
+// TODO: add html file name
+  app.get("/", function(req, res){
+    res.send("#");
+  })
+
+// this route is for a user who says they lost an item - will display all found items.
+// TODO: add html file name
+  app.get("/api/lost", function(req, res) {
+    db.Stuff.findAll({
+      where: {
+        lost: false
+      }
+    }).then(function(dbStuff) {
+      res.render("#");
     });
   });
 
-
-  app.get("/api/stuff", function(req, res) {
-    res.render("main");
+// this route is for a user who says they found an item - will display all lost items
+// TODO: add html file names
+  app.get("/api/found", function(req, res){
+    db.Stuff.findAll({
+      where: {
+        lost: true
+      }
+    });then(function(dbStuff){
+      res.render("#");
+    });
   });
-
-};
