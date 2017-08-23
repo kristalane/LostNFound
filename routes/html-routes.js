@@ -21,25 +21,13 @@ module.exports = function(app) {
 // TODO: add html file name
 
   app.get("/lost", function(req, res) {
-    db.Stuff.findAll({
-      where: {
-        lost: false
-      }
-    }).then(function(dbStuff) {
-      res.render("#");
-    });
+    res.sendFile(path.resolve(path.join(__dirname, "..", "views", "layouts", "lost.html")))
   });
 
 // this route is for a user who says they found an item - will display all lost items
 // TODO: add html file names
   app.get("/found", function(req, res){
-    db.Stuff.findAll({
-      where: {
-        lost: true
-      }
-    });then(function(dbStuff){
-      res.render("#");
-    });
+    res.sendFile(path.resolve(path.join(__dirname, "..", "views", "layouts", "found.html")))
   });
 };
 
