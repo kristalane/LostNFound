@@ -15,19 +15,24 @@ module.exports = function(app) {
   });
 
 
+
   app.post("/api/stuff", function(req, res) {
-    db.stuff.create({
+    db.Stuff.create({
       itemtype: req.body.itemtype,
       size: req.body.size,
       color: req.body.color,
-      attrib: req.body.attrib
+      location:req.body.location,
+      attrib: req.body.attrib,
+      lost: req.body.isLost
     }).then(function(dbStuff) {
       res.json(dbStuff);
     });
   });
 
+
+
   app.delete("/api/stuff/:id", function(req, res) {
-    db.stuff.destroy({
+    db.Stuff.destroy({
       where: {
         id: req.params.id
       }
