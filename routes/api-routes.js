@@ -16,7 +16,7 @@ module.exports = function(app) {
 
 
 
-  app.post("/api/stuff", function(req, res) {
+  app.post("/api/postitem", function(req, res) {
     db.Stuff.create({
       itemtype: req.body.itemtype,
       size: req.body.size,

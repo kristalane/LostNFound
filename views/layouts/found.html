@@ -57,14 +57,26 @@
 <script type="text/javascript">
 
 
-$(document).ready(function(){
-  $.ajax({
-    url: "/api/getitems?lost=1"
-  }).then(function(res, err){
-    console.log(res)
-  })
+$(document).ready(function() {
+    $.ajax({
+        url: "/api/getitems?lost=1"
+    }).then(function(res, err) {
+        console.log(res)
+        var items = res
+        var tbody = $('#items');
+        for (i in items) {
+            var tr = $('<tr>').append(
+                $('<td>').text(items[i].itemtype),
+                $('<td>').text(items[i].size),
+                $('<td>').text(items[i].color)
+                // $('<td>').text(items[i].location)
+            );
+            $(tr).appendTo(tbody);
+        }
+    })
 })
 
+//Lost1 = true  Lost2 = false
 
 
 
