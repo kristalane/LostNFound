@@ -10,5 +10,8 @@ CREATE TABLE stuff (
 	size varchar (3) NOT NULL,
 	attrib varchar (255) NOT NULL,
 	lost boolean,
+    location varchar (255),
+    createdAt datetime,
+    updatedAt datetime,
 	PRIMARY KEY (id)
 );
