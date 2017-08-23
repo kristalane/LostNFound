@@ -3,22 +3,42 @@
 <head>
 
 	<title>Home</title>
+  
+  <!--Bootstrap-->
+	
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+  <!--Bootstrap-->
+  
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+  
+  <!--Link to CSS -->
 	<link rel="stylesheet" type="text/css" href="style.css" >
-
+  
+  <!--Link to jQuery for bootstrap -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
   <script>window.jQuery || document.write('<script src="../../assets/js/vendor/ jquery.min.js"><\/script>')</script>
   
+  <!--Link to bootstrap-->
+  
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"   integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"   crossorigin="anonymous"></script>
   
   <script type="text/javascript" src="javascript/javascript.js"></script>
-
+  
+  <!--Link to fonts-->
+  
   <link href="https://fonts.googleapis.com/css?family=Expletus+Sans" rel="stylesheet">
+  
+  <!--Link to semantic-->
+  
+  <script src="semantic/dist/semantic.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/components/accordion.min.css">
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+  
 
 </head>
 
@@ -92,32 +112,152 @@
 
         <div class="formHead">
           
-          <div class="elem">
-
-            <p><label for="name">Item Type:</label></p>
-            <input id="type" class="inputSlot" type="text">
-
-          </div>
+          <div class="ui vertical accordion menu">
+            
+            <div class="item">
+            
+              <a class="active title">
+            
+                <i class="dropdown icon"></i>
+            
+                Size
+            
+              </a>
+            
+              <div class="active content">
+            
+                <div class="ui form">
+            
+                  <div class="grouped fields">
+            
+                    <div class="field">
+            
+                      <div class="ui radio checkbox">
+            
+                        <input type="radio" name="size" value="small">
+            
+                        <label>Small</label>
+            
+                      </div>
+            
+                    </div>
+            
+                    <div class="field">
+            
+                      <div class="ui radio checkbox">
+            
+                        <input type="radio" name="size" value="medium">
+            
+                        <label>Medium</label>
+            
+                      </div>
+            
+                    </div>
+            
+                    <div class="field">
+            
+                      <div class="ui radio checkbox">
+            
+                        <input type="radio" name="size" value="large">
+            
+                        <label>Large</label>
+            
+                      </div>
+            
+                    </div>
+            
+                    <div class="field">
+            
+                      <div class="ui radio checkbox">
+            
+                        <input type="radio" name="size" value="x-large">
+            
+                        <label>X-Large</label>
+            
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+              </div>
+            
+            </div>
+            
+            <div class="item">
+            
+              <a class="title">
+            
+                <i class="dropdown icon"></i>
+            
+                Colors
+            
+              </a>
+            
+              <div class="content">
+            
+                <div class="ui form">
+            
+                  <div class="grouped fields">
+            
+                    <div class="field">
+            
+                      <div class="ui checkbox">
+            
+                        <input type="checkbox" name="small">
+            
+                        <label>Red</label>
+            
+                      </div>
+            
+                    </div>
+            
+                    <div class="field">
+            
+                      <div class="ui checkbox">
+            
+                        <input type="checkbox" name="medium">
+            
+                        <label>Orange</label>
+            
+                      </div>
+            
+                    </div>
+            
+                    <div class="field">
+            
+                      <div class="ui checkbox">
+            
+                        <input type="checkbox" name="large">
+            
+                        <label>Green</label>
+            
+                      </div>
+            
+                    </div>
+            
+                    <div class="field">
+            
+                      <div class="ui checkbox">
+            
+                        <input type="checkbox" name="x-large">
+            
+                        <label>Blue</label>
+            
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+              </div>
+            
+            </div>
           
-          <div class="elem">
-
-            <p><label for="email">Size:</label></p>
-            <input id="size" class="inputSlot" type="text">
-
-          </div>
-          
-          <div class="elem">
-
-            <p><label for="message">Item Color</label></p>
-            <input id="color" class="inputSlot" type="text">
-
-          </div>
-          
-          <div class="elem">
-
-            <p><label for="message">Location (Last Seen)</label></p>
-            <input id="location" class="inputSlot" type="text">
-
           </div>
           
           <input class="submit" type="submit" name="Submit" value="Submit">
@@ -127,6 +267,71 @@
     </div>
 
   </div>
+
+  <div class="container">
+
+  <div class="row">
+
+    
+
+      <div id="floating-panel">
+
+        <input id="address" type="textbox" value="San Francisco">
+        <input id="submit" type="button" value="Geocode">
+
+      </div>
+
+  
+
+  </div>
+
+</div>
+
+<div class="container">
+
+  <div class="row">
+
+    <div class="col-lg-12" id="mapDisplay">
+
+      <div id="map"></div>
+    
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 12,
+          center: {lat: 37.7936684, lng: -122.3957547}
+        });
+        var geocoder = new google.maps.Geocoder();
+        document.getElementById('submit').addEventListener('click', function() {
+          geocodeAddress(geocoder, map);
+        });
+      }
+      // window.initMap = initMap;
+      function geocodeAddress(geocoder, resultsMap) {
+        console.log(geocoder, resultsMap)
+        var address = document.getElementById('address').value;
+        geocoder.geocode({'address': address}, function(results, status) {
+          if (status === 'OK') {
+            resultsMap.setCenter(results[0].geometry.location);
+            var marker = new google.maps.Marker({
+              map: resultsMap,
+              position: results[0].geometry.location
+            });
+          } else {
+            alert('Geocode was not successful for the following reason: ' + status);
+          }
+        });
+      }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKgqILnUfcbks-G_f0KfFU-ENQ4fod09E&callback=initMap">
+</script>
+
   
 
 
