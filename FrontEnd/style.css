@@ -1,5 +1,7 @@
 body {
+
 	background-color: #772D8B;
+
 }
 
 caption {
@@ -14,14 +16,38 @@ h3{
 
 }
 
-p {
-	color: #FCD0A1;
+#blurb{
+
   font-family: 'Expletus Sans', cursive;
+  border: 2px solid #A1EF8B;
+  margin: 10px;
+  border-radius: 5px;
+  text-align: center;
+  align-content: center;
+
 }
+
+p {
+
+	color: #FCD0A1;
+  font-family: 'Baloo Bhaijaan', cursive;
+  font-size: 150%;
+}
+
+p {
+
+}
+
+.featurette-image{
+    height: 350px;
+    width: 400px;
+    border: 2px solid #A1EF8B;
+  }
 
 .title {
 
 	color: #A1EF8B;
+
 }
 
 #imageContainer{
