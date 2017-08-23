@@ -24,6 +24,22 @@ p {
 	color: #A1EF8B;
 }
 
+#imageContainer{
+  height:100%;
+  width: 100%;
+}
+
+#headerImage{
+  align-content: center;
+  height:200px;
+  width: 700px;
+  border-width: 3px;
+  border-color: #A1EF8B;
+  background-image: url("images/logo.jpg");
+  background-repeat: no-repeat;
+
+}
+
 .navbar .navbar-nav {
   display: inline-block;
   float: none;
@@ -136,7 +152,7 @@ h1 {
 
   align-content: center;
   height: 400px;
-  width: 60%;
+  width: 100%;
   float: center;
 
 }
