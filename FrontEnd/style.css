@@ -1,20 +1,34 @@
 body {
-	background-color: #6D1A36;
+	background-color: #772D8B;
 }
 
-p{
+caption {
+
+  font-family: 'Expletus Sans', cursive;
+
+}
+
+h3{
+
+  font-family: 'Expletus Sans', cursive;
+
+}
+
+p {
 	color: #FCD0A1;
+  font-family: 'Expletus Sans', cursive;
 }
 
-.title{
+.title {
 
-	color: #53917E;
+	color: #A1EF8B;
 }
 
 .navbar .navbar-nav {
   display: inline-block;
   float: none;
   vertical-align: top;
+  font-family: 'Expletus Sans', cursive;
 }
 
 .navbar .navbar-collapse {
@@ -25,35 +39,40 @@ p{
 	border: none;
 	background: transparent;
 	cursor: pointer;
+  font-family: 'Expletus Sans', cursive;
 }
 
 table {
-  font-family: arial, sans-serif;
+  font-family: 'Expletus Sans', sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
 
 td, th {
-  border: 1px solid #FCD0A1;
+  border: 1px solid #A1EF8B;
   text-align: left;
-  padding: 8px;
+  padding: 15px;
+  font-family: 'Expletus Sans', cursive;
 }
 
 .submit {
   display: block;
+  font-family: 'Expletus Sans', cursive;
 }
 
 caption {
-  background-color: #B1B695;
+  background-color: #5A0B4D;
   color: white;
   font-size: 20px;
   padding-left: 20px;
+  font-family: 'Expletus Sans', cursive;
   text-align: center;
 }
 
 .heading {
   background-color: #53917E;
   color: white;
+  font-family: 'Expletus Sans', cursive;
   font-size: 20px;
   text-align: center;
   padding: 10px;
@@ -64,8 +83,19 @@ caption {
   padding: 10px;
 }
 
-#schedule, #addTrain {
-  border: 2px solid #53917E;
+#addItem {
+  font-family: 'Expletus Sans', cursive;
+  border: 2px solid #A1EF8B;
+  margin: 10px;
+  border-radius: 5px;
+  background-image: url("images/home.jpg"); 
+  background-size: 1200px 1200px;
+  background-repeat: repeat;
+}
+
+#stuffLost, #stuffFound {
+  font-family: 'Expletus Sans', cursive;
+  border: 2px solid #A1EF8B;
   margin: 10px;
   border-radius: 5px;
 }
@@ -76,7 +106,8 @@ caption {
 
 h1 {
   background-color: #53917E;
-  color: white;
+  color: #92D5E6;
+  font-family: 'Expletus Sans', cursive;
   text-align: center;
   margin-top: 0px;
   padding: 20px;
@@ -92,6 +123,7 @@ h1 {
   margin-top: 30px;
   border-radius: 5px;
   width: 100%;
+  font-family: 'Expletus Sans', cursive;
 }
 
 #mapDisplay{

@@ -2,11 +2,19 @@ var db = require("../models");
 
 // Routes =============================================================
 module.exports = function(app) {
-  app.get("/api/stuff", function(req, res) {
-    db.Stuff.findAll({}).then(function(dbStuff) {
-      res.json(dbStuff);
-    });
+
+  app.get("/api/getitems", function(req, res) {
+    console.log(req.query.lost)
+    db.stuff.findAll({
+      where: {
+          lost: req.query.lost
+      } 
+    }).then(function(dbStuff) {
+          res.json(dbStuff);
+      });
   });
+
+
 
   app.post("/api/stuff", function(req, res) {
     db.Stuff.create({
