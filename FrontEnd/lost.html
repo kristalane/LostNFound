@@ -3,49 +3,51 @@
 <head>
 
 	<title>Home</title>
-  
-  <!--Bootstrap-->
-	
+
+  <!--Bootstrap CSS-->
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-  <!--Bootstrap-->
-  
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  
   <!--Link to CSS -->
 	<link rel="stylesheet" type="text/css" href="style.css" >
-  
-  <!--Link to jQuery for bootstrap -->
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
-  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/ jquery.min.js"><\/script>')</script>
-  
-  <!--Link to bootstrap-->
-  
+  <!--Link to semantic CSS CDN-->
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/components/accordion.min.css">
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/components/modal.min.css">
+
+
+	<!--Bootstrap script-->
+
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"   integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"   crossorigin="anonymous"></script>
-  
+
+	<!--Link to jQuery for bootstrap -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+<!--CDN scripts-->
+	<script>window.jQuery || document.write('<script src="../../assets/js/vendor/ jquery.min.js"><\/script>')</script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/components/accordion.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/components/modal.min.js"></script>
+
   <script type="text/javascript" src="javascript/javascript.js"></script>
-  
-  <!--Link to fonts-->
-  
-  <link href="https://fonts.googleapis.com/css?family=Expletus+Sans" rel="stylesheet">
-  
-  <!--Link to semantic-->
-  
-  <script src="semantic/dist/semantic.min.js"></script>
 
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/components/accordion.min.css">
+	<!--Link to fonts-->
 
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Expletus+Sans" rel="stylesheet">
 
-  
+
 
 </head>
 
 <body background>
-	
+
 <div class="container">
-      
+
 	<nav class="navbar" role="navigation">
 
         <div class="navbar-header">
@@ -83,23 +85,23 @@
 </div>
 
   <div class="container">
-  
+
     <div class="row" id='stuffLost'>
-      
+
       <table id='content'>
-      
+
         <caption>Lost</caption>
-      
+
         <tr>
-        
+
           <th class='title'>Type</th>
-          
+
           <th class='title'>Size</th>
-          
+
           <th class='title'>Color</th>
-          
+
           <th class='title'>Location</th>
-        
+
         </tr>
 
       </table>
@@ -111,157 +113,157 @@
       <h3 class='heading'>Add Item</h3>
 
         <div class="formHead">
-          
+
           <div class="ui vertical accordion menu">
-            
+
             <div class="item">
-            
+
               <a class="active title">
-            
+
                 <i class="dropdown icon"></i>
-            
+
                 Size
-            
+
               </a>
-            
+
               <div class="active content">
-            
+
                 <div class="ui form">
-            
+
                   <div class="grouped fields">
-            
+
                     <div class="field">
-            
+
                       <div class="ui radio checkbox">
-            
+
                         <input type="radio" name="size" value="small">
-            
+
                         <label>Small</label>
-            
+
                       </div>
-            
+
                     </div>
-            
+
                     <div class="field">
-            
+
                       <div class="ui radio checkbox">
-            
+
                         <input type="radio" name="size" value="medium">
-            
+
                         <label>Medium</label>
-            
+
                       </div>
-            
+
                     </div>
-            
+
                     <div class="field">
-            
+
                       <div class="ui radio checkbox">
-            
+
                         <input type="radio" name="size" value="large">
-            
+
                         <label>Large</label>
-            
+
                       </div>
-            
+
                     </div>
-            
+
                     <div class="field">
-            
+
                       <div class="ui radio checkbox">
-            
+
                         <input type="radio" name="size" value="x-large">
-            
+
                         <label>X-Large</label>
-            
+
                       </div>
-            
+
                     </div>
-            
+
                   </div>
-            
+
                 </div>
-            
+
               </div>
-            
+
             </div>
-            
+
             <div class="item">
-            
+
               <a class="title">
-            
+
                 <i class="dropdown icon"></i>
-            
+
                 Colors
-            
+
               </a>
-            
+
               <div class="content">
-            
+
                 <div class="ui form">
-            
+
                   <div class="grouped fields">
-            
+
                     <div class="field">
-            
+
                       <div class="ui checkbox">
-            
+
                         <input type="checkbox" name="small">
-            
+
                         <label>Red</label>
-            
+
                       </div>
-            
+
                     </div>
-            
+
                     <div class="field">
-            
+
                       <div class="ui checkbox">
-            
+
                         <input type="checkbox" name="medium">
-            
+
                         <label>Orange</label>
-            
+
                       </div>
-            
+
                     </div>
-            
+
                     <div class="field">
-            
+
                       <div class="ui checkbox">
-            
+
                         <input type="checkbox" name="large">
-            
+
                         <label>Green</label>
-            
+
                       </div>
-            
+
                     </div>
-            
+
                     <div class="field">
-            
+
                       <div class="ui checkbox">
-            
+
                         <input type="checkbox" name="x-large">
-            
+
                         <label>Blue</label>
-            
+
                       </div>
-            
+
                     </div>
-            
+
                   </div>
-            
+
                 </div>
-            
+
               </div>
-            
+
             </div>
-          
+
           </div>
-          
+
           <input class="submit" type="submit" name="Submit" value="Submit">
-  
+
         </div>
 
     </div>
@@ -272,7 +274,7 @@
 
   <div class="row">
 
-    
+
 
       <div id="floating-panel">
 
@@ -281,7 +283,7 @@
 
       </div>
 
-  
+
 
   </div>
 
@@ -294,7 +296,7 @@
     <div class="col-lg-12" id="mapDisplay">
 
       <div id="map"></div>
-    
+
     </div>
 
   </div>
@@ -332,7 +334,7 @@
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKgqILnUfcbks-G_f0KfFU-ENQ4fod09E&callback=initMap">
 </script>
 
-  
+
 
 
 </body>
