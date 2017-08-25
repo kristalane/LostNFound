@@ -124,7 +124,7 @@
         
                 <div class="ui radio checkbox">
         
-                  <input type="checkbox" name="jacket">
+                  <input type="radio" name="jacket">
         
                   <label>Jacket</label>
         
@@ -136,7 +136,7 @@
         
                 <div class="ui radio checkbox">
         
-                  <input type="checkbox" name="shirt">
+                  <input type="radio" name="shirt">
         
                   <label>Shirt</label>
         
@@ -148,7 +148,7 @@
         
                 <div class="ui radio checkbox">
         
-                  <input type="checkbox" name="scarf">
+                  <input type="radio" name="scarf">
         
                   <label>Scarf</label>
         
@@ -160,7 +160,7 @@
         
                 <div class="ui radio checkbox">
         
-                  <input type="checkbox" name="sweater">
+                  <input type="radio" name="sweater">
         
                   <label>Sweater</label>
         
@@ -268,7 +268,7 @@
         
                 <div class="ui radio checkbox">
         
-                  <input type="checkbox" name="red">
+                  <input type="radio" name="red">
         
                   <label>Red</label>
         
@@ -280,7 +280,7 @@
         
                 <div class="ui radio checkbox">
         
-                  <input type="checkbox" name="orange">
+                  <input type="radio" name="orange">
         
                   <label>Orange</label>
         
@@ -292,7 +292,7 @@
         
                 <div class="ui radio checkbox">
         
-                  <input type="checkbox" name="yellow">
+                  <input type="radio" name="yellow">
         
                   <label>Yellow</label>
         
@@ -304,7 +304,7 @@
         
                 <div class="ui radio checkbox">
         
-                  <input type="checkbox" name="green">
+                  <input type="radio" name="green">
         
                   <label>Green</label>
         
@@ -316,7 +316,7 @@
         
                 <div class="ui radio checkbox">
         
-                  <input type="checkbox" name="blue">
+                  <input type="radio" name="blue">
         
                   <label>Blue</label>
         
@@ -328,7 +328,7 @@
         
                 <div class="ui radio checkbox">
         
-                  <input type="checkbox" name="purple">
+                  <input type="radio" name="purple">
         
                   <label>Purple</label>
         
@@ -340,7 +340,7 @@
         
                 <div class="ui radio checkbox">
         
-                  <input type="checkbox" name="pink">
+                  <input type="radio" name="pink">
         
                   <label>Pink</label>
         
@@ -352,7 +352,7 @@
         
                 <div class="ui radio checkbox">
         
-                  <input type="checkbox" name="black">
+                  <input type="radio" name="black">
         
                   <label>Black</label>
         
@@ -442,6 +442,7 @@
       $(document).ready(function() {
         $('.ui.accordion')
          .accordion();
+         $('.ui.checkbox').checkbox();
     $.ajax({
         url: "/api/getitems?lost=0"
     }).then(function(res, err) {
