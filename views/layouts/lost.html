@@ -88,6 +88,8 @@
 
           <th class='title'>Color</th>
 
+          <th class='title'>Attribute</th>
+
           <th class='title'>Location</th>
 
         </tr>
@@ -368,7 +370,7 @@
         
       </div>
 
-          <input class="submit" type="submit" name="Submit" value="Submit">
+          <input class="submit" type="submit" id="submitItem" value="Submit">
 
         </div>
 
@@ -439,9 +441,7 @@
 
 
 
-      $(document).ready(function() {
-        $('.ui.accordion')
-         .accordion();
+      $(document).ready(function() {      
     $.ajax({
         url: "/api/getitems?lost=0"
     }).then(function(res, err) {
@@ -460,7 +460,7 @@
     })
 
 
-//Lost1 = true  Lost2 = false
+//Lost1 = true  Lost0 = false
 
 $("#submitItem").click(function(){
     console.log("clicked")
@@ -469,7 +469,7 @@ $("#submitItem").click(function(){
        itemtype: $("#type").val(),
        size: $("#size").val(),
        color: $("#color").val(),
-       // attribute: $("#type").val(),
+       attribute: $("#type").val(),
        location: $("#location").val()
     }
 
