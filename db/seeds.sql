@@ -1,7 +1,9 @@
-INSERT INTO stuff (itemtype, color, size, attrib, lost) 
-VALUES ("Shirt", "Red", "M", "Pokemon", true);
-INSERT INTO stuff (itemtype, color, size, attrib, lost) 
-VALUES ("Jacket", "Black", "L", "Fringe", false);
-INSERT INTO stuff (itemtype, color, size, attrib, lost) 
-VALUES ("Scarf", "Blue", "S", "And black", true);
+INSERT INTO stuff (itemtype, color, size, attrib, lost, location) 
+VALUES ("Shirt", "Red", "M", "Pokemon", true, "San Francisco");
+
+INSERT INTO stuff (itemtype, color, size, attrib, lost, location) 
+VALUES ("Jacket", "Black", "L", "Fringe", false, "San Francisco");
+
+INSERT INTO stuff (itemtype, color, size, attrib, lost, location) 
+VALUES ("Scarf", "Blue", "S", "And black", true, "San Francisco");
 

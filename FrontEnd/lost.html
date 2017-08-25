@@ -328,6 +328,52 @@
           }
         });
       }
+
+
+
+      $(document).ready(function() {
+    $.ajax({
+        url: "/api/getitems?lost=0"
+    }).then(function(res, err) {
+        console.log(res)
+        var items = res
+        var tbody = $('#items');
+        for (i in items) {
+            var tr = $('<tr>').append(
+                $('<td>').text(items[i].itemtype),
+                $('<td>').text(items[i].size),
+                $('<td>').text(items[i].color)
+                // $('<td>').text(items[i].location)
+            );
+            $(tr).appendTo(tbody);
+        }
+    })
+
+
+//Lost1 = true  Lost2 = false
+
+$("#submitItem").click(function(){
+    console.log("clicked")
+      event.preventDefault();
+      var itemLost = {
+       itemtype: $("#type").val(),
+       size: $("#size").val(),
+       color: $("#color").val(),
+       // attribute: $("#type").val(),
+       location: $("#location").val()
+    }
+
+    $.ajax({
+      data: itemLost,
+      type: "post",
+      url: "/api/postitem?lost=1"
+    }).then(function(res, err){
+      console.log(res)
+    })    
+});
+
+})
+      
 </script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKgqILnUfcbks-G_f0KfFU-ENQ4fod09E&callback=initMap">
 </script>

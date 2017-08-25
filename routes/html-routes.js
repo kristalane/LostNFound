@@ -21,12 +21,14 @@ module.exports = function(app) {
 
 
   app.get("/lost", function(req, res) {
+    console.log("here lost")
     res.sendFile(path.resolve(path.join(__dirname, "..", "views", "layouts", "lost.html")))
   });
 
 // this route is for a user who says they found an item - will display all lost items
 
   app.get("/found", function(req, res){
+    console.log("here found")
     res.sendFile(path.resolve(path.join(__dirname, "..", "views", "layouts", "found.html")))
   });
 };
