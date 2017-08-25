@@ -19,6 +19,7 @@ h3{
 #blurb{
 
   font-family: 'Expletus Sans', cursive;
+  border-style: double;
   border: 2px solid #A1EF8B;
   margin: 10px;
   border-radius: 5px;
