@@ -2,19 +2,18 @@
 <html>
 <head>
 
-	<title>Home</title>
+  <title>Home</title>
+  <!-- Load jquery PRIOR to bootstrap -->
 
-	  <!-- Load jquery PRIOR to bootstrap -->
+  <link rel="stylesheet" text="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css"></link>
+    <!-- Load Semantic-->
+  <link rel="stylesheet" text="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/components/accordion.min.css"></link>
+
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-
   <!-- Load Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-
- <!--  What is this? We dont have this local file either-->
-  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/ jquery.min.js"><\/script>')</script>
 
   <!--Google Fonts-->
 
@@ -25,13 +24,19 @@
   <!-- Load our css -->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css" >
 
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/components/accordion.min.js"></script>
+
+
 </head>
 
 <body background>
-	
+
 <div class="container">
-      
-	<nav class="navbar" role="navigation">
+
+  <nav class="navbar" role="navigation">
 
         <div class="navbar-header">
 
@@ -63,28 +68,28 @@
 
         </div>
 
-	</nav>
+  </nav>
 
 </div>
 
   <div class="container">
-  
+
     <div class="row" id='stuffFound'>
-      
+
       <table id='content'>
-      
+
         <caption>Found</caption>
-      
+
         <tr>
-        
+
           <th class='title'>Type</th>
-          
+
           <th class='title'>Size</th>
-          
+
           <th class='title'>Color</th>
-          
+
           <th class='title'>Location</th>
-        
+
         </tr>
 
       </table>
@@ -96,54 +101,295 @@
       <h3 class='heading'>Add Item</h3>
 
         <div class="formHead">
-          
-          <div class="elem">
+        
+          <div class="ui vertical accordion menu">
 
-            <p><label for="name">Item Type:</label></p>
-            <input id="type" class="inputSlot" type="text">
-
+          <div class="item">
+        
+          <a class="title">
+        
+            <i class="dropdown icon"></i>
+        
+            Type
+        
+          </a>
+        
+        <div class="content">
+        
+          <div class="ui form">
+        
+            <div class="grouped fields">
+        
+              <div class="field">
+        
+                <div class="ui radio checkbox">
+        
+                  <input type="checkbox" name="jacket">
+        
+                  <label>Jacket</label>
+        
+                </div>
+        
+              </div>
+        
+              <div class="field">
+        
+                <div class="ui radio checkbox">
+        
+                  <input type="checkbox" name="shirt">
+        
+                  <label>Shirt</label>
+        
+                </div>
+        
+              </div>
+        
+              <div class="field">
+        
+                <div class="ui radio checkbox">
+        
+                  <input type="checkbox" name="scarf">
+        
+                  <label>Scarf</label>
+        
+                </div>
+        
+              </div>
+        
+              <div class="field">
+        
+                <div class="ui radio checkbox">
+        
+                  <input type="checkbox" name="sweater">
+        
+                  <label>Sweater</label>
+        
+                </div>
+              
+              </div>
+            
+            </div>
+        
           </div>
+        
+        </div>
+        
+      </div>
+           
+            <div class="item">
+           
+              <a class="active title">
+           
+                <i class="dropdown icon"></i>
+           
+                Size
+           
+              </a>
+           
+            <div class="active content">
+           
+              <div class="ui form">
+           
+                <div class="grouped fields">
+           
+                  <div class="field">
+           
+                    <div class="ui radio checkbox">
+           
+                      <input type="radio" name="size" value="small">
+           
+                      <label>Small</label>
+           
+                    </div>
+           
+                  </div>
+           
+                  <div class="field">
+           
+                    <div class="ui radio checkbox">
+           
+                      <input type="radio" name="size" value="medium">
+           
+                      <label>Medium</label>
+           
+                    </div>
+           
+                  </div>
+           
+                  <div class="field">
+           
+                    <div class="ui radio checkbox">
+           
+                      <input type="radio" name="size" value="large">
+           
+                      <label>Large</label>
+           
+                    </div>
+           
+                  </div>
+           
+                  <div class="field">
+           
+                    <div class="ui radio checkbox">
+           
+                      <input type="radio" name="size" value="x-large">
+           
+                      <label>X-Large</label>
+           
+                    </div>
+           
+                  </div>
+           
+                </div>
+           
+              </div>
+           
+            </div>
           
-          <div class="elem">
-
-            <p><label for="email">Size:</label></p>
-            <input id="size" class="inputSlot" type="text">
-
           </div>
-          
-          <div class="elem">
+        
+        <div class="item">
+        
+          <a class="title">
+        
+            <i class="dropdown icon"></i>
+        
+            Colors
+        
+          </a>
+        
+        <div class="content">
+        
+          <div class="ui form">
+        
+            <div class="grouped fields">
+        
+              <div class="field">
+        
+                <div class="ui radio checkbox">
+        
+                  <input type="checkbox" name="red">
+        
+                  <label>Red</label>
+        
+                </div>
+        
+              </div>
+        
+              <div class="field">
+        
+                <div class="ui radio checkbox">
+        
+                  <input type="checkbox" name="orange">
+        
+                  <label>Orange</label>
+        
+                </div>
+        
+              </div>
 
-            <p><label for="message">Item Color</label></p>
-            <input id="color" class="inputSlot" type="text">
+              <div class="field">
+        
+                <div class="ui radio checkbox">
+        
+                  <input type="checkbox" name="yellow">
+        
+                  <label>Yellow</label>
+        
+                </div>
+        
+              </div>
+        
+              <div class="field">
+        
+                <div class="ui radio checkbox">
+        
+                  <input type="checkbox" name="green">
+        
+                  <label>Green</label>
+        
+                </div>
+        
+              </div>
+        
+              <div class="field">
+        
+                <div class="ui radio checkbox">
+        
+                  <input type="checkbox" name="blue">
+        
+                  <label>Blue</label>
+        
+                </div>
+              
+              </div>
 
+              <div class="field">
+        
+                <div class="ui radio checkbox">
+        
+                  <input type="checkbox" name="purple">
+        
+                  <label>Purple</label>
+        
+                </div>
+              
+              </div>
+
+              <div class="field">
+        
+                <div class="ui radio checkbox">
+        
+                  <input type="checkbox" name="pink">
+        
+                  <label>Pink</label>
+        
+                </div>
+              
+              </div>
+
+              <div class="field">
+        
+                <div class="ui radio checkbox">
+        
+                  <input type="checkbox" name="black">
+        
+                  <label>Black</label>
+        
+                </div>
+              
+              </div>
+            
+            </div>
+        
           </div>
-          
-          <div class="elem">
+        
+        </div>
+        
+      </div>
 
-            <p><label for="message">Location (Last Seen)</label></p>
-            <input id="location" class="inputSlot" type="text">
-
-          </div>
-          
           <input class="submit" type="submit" name="Submit" value="Submit">
-  
+
         </div>
 
     </div>
 
-    <div class="container">
+  </div>
+
+  <div class="container">
 
   <div class="row">
 
-    <div id="floating-panel">
 
-      <input id="address" type="textbox" value="San Francisco">
 
-      <input id="submit" type="button" value="Geocode">
-      
-    </div>
+      <div id="floating-panel">
 
-  
+        <input id="address" type="textbox" value="San Francisco">
+        <input id="submit" type="button" value="Geocode">
+
+      </div>
+
+
 
   </div>
 
@@ -156,7 +402,7 @@
     <div class="col-lg-12" id="mapDisplay">
 
       <div id="map"></div>
-    
+
     </div>
 
   </div>
@@ -191,9 +437,13 @@
         });
       }
 
+
+
       $(document).ready(function() {
+        $('.ui.accordion')
+         .accordion();
     $.ajax({
-        url: "/api/getitems?lost=1"
+        url: "/api/getitems?lost=0"
     }).then(function(res, err) {
         console.log(res)
         var items = res
@@ -208,15 +458,38 @@
             $(tr).appendTo(tbody);
         }
     })
-})
+
 
 //Lost1 = true  Lost2 = false
 
+$("#submitItem").click(function(){
+    console.log("clicked")
+      event.preventDefault();
+      var itemLost = {
+       itemtype: $("#type").val(),
+       size: $("#size").val(),
+       color: $("#color").val(),
+       // attribute: $("#type").val(),
+       location: $("#location").val()
+    }
+
+    $.ajax({
+      data: itemLost,
+      type: "post",
+      url: "/api/postitem?lost=1"
+    }).then(function(res, err){
+      console.log(res)
+    })    
+});
+
+})
+      
 </script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKgqILnUfcbks-G_f0KfFU-ENQ4fod09E&callback=initMap">
 </script>
 
-    
-</div>
+
+
+
 </body>
 </html>
