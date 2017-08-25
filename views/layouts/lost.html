@@ -2,17 +2,18 @@
 <html>
 <head>
 
-	<title>Home</title>
+  <title>Home</title>
   <!-- Load jquery PRIOR to bootstrap -->
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
+  <link rel="stylesheet" text="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css"></link>
+    <!-- Load Semantic-->
+  <link rel="stylesheet" text="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/components/accordion.min.css"></link>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <!-- Load Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
- <!--  What is this? We dont have this local file either-->
-  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/ jquery.min.js"><\/script>')</script>
 
   <!--Google Fonts-->
 
@@ -22,6 +23,12 @@
 
   <!-- Load our css -->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css" >
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/components/accordion.min.js"></script>
+
 
 </head>
 
@@ -96,154 +103,272 @@
       <h3 class='heading'>Add Item</h3>
 
         <div class="formHead">
-
+        
           <div class="ui vertical accordion menu">
 
-            <div class="item">
-
-              <a class="active title">
-
-                <i class="dropdown icon"></i>
-
-                Size
-
-              </a>
-
-              <div class="active content">
-
-                <div class="ui form">
-
-                  <div class="grouped fields">
-
-                    <div class="field">
-
-                      <div class="ui radio checkbox">
-
-                        <input type="radio" name="size" value="small">
-
-                        <label>Small</label>
-
-                      </div>
-
-                    </div>
-
-                    <div class="field">
-
-                      <div class="ui radio checkbox">
-
-                        <input type="radio" name="size" value="medium">
-
-                        <label>Medium</label>
-
-                      </div>
-
-                    </div>
-
-                    <div class="field">
-
-                      <div class="ui radio checkbox">
-
-                        <input type="radio" name="size" value="large">
-
-                        <label>Large</label>
-
-                      </div>
-
-                    </div>
-
-                    <div class="field">
-
-                      <div class="ui radio checkbox">
-
-                        <input type="radio" name="size" value="x-large">
-
-                        <label>X-Large</label>
-
-                      </div>
-
-                    </div>
-
-                  </div>
-
+          <div class="item">
+        
+          <a class="title">
+        
+            <i class="dropdown icon"></i>
+        
+            Type
+        
+          </a>
+        
+        <div class="content">
+        
+          <div class="ui form">
+        
+            <div class="grouped fields">
+        
+              <div class="field">
+        
+                <div class="ui radio checkbox">
+        
+                  <input type="checkbox" name="jacket">
+        
+                  <label>Jacket</label>
+        
                 </div>
-
+        
               </div>
-
-            </div>
-
-            <div class="item">
-
-              <a class="title">
-
-                <i class="dropdown icon"></i>
-
-                Colors
-
-              </a>
-
-              <div class="content">
-
-                <div class="ui form">
-
-                  <div class="grouped fields">
-
-                    <div class="field">
-
-                      <div class="ui checkbox">
-
-                        <input type="checkbox" name="small">
-
-                        <label>Red</label>
-
-                      </div>
-
-                    </div>
-
-                    <div class="field">
-
-                      <div class="ui checkbox">
-
-                        <input type="checkbox" name="medium">
-
-                        <label>Orange</label>
-
-                      </div>
-
-                    </div>
-
-                    <div class="field">
-
-                      <div class="ui checkbox">
-
-                        <input type="checkbox" name="large">
-
-                        <label>Green</label>
-
-                      </div>
-
-                    </div>
-
-                    <div class="field">
-
-                      <div class="ui checkbox">
-
-                        <input type="checkbox" name="x-large">
-
-                        <label>Blue</label>
-
-                      </div>
-
-                    </div>
-
-                  </div>
-
+        
+              <div class="field">
+        
+                <div class="ui radio checkbox">
+        
+                  <input type="checkbox" name="shirt">
+        
+                  <label>Shirt</label>
+        
                 </div>
-
+        
               </div>
-
+        
+              <div class="field">
+        
+                <div class="ui radio checkbox">
+        
+                  <input type="checkbox" name="scarf">
+        
+                  <label>Scarf</label>
+        
+                </div>
+        
+              </div>
+        
+              <div class="field">
+        
+                <div class="ui radio checkbox">
+        
+                  <input type="checkbox" name="sweater">
+        
+                  <label>Sweater</label>
+        
+                </div>
+              
+              </div>
+            
             </div>
-
+        
           </div>
+        
+        </div>
+        
+      </div>
+           
+            <div class="item">
+           
+              <a class="active title">
+           
+                <i class="dropdown icon"></i>
+           
+                Size
+           
+              </a>
+           
+            <div class="active content">
+           
+              <div class="ui form">
+           
+                <div class="grouped fields">
+           
+                  <div class="field">
+           
+                    <div class="ui radio checkbox">
+           
+                      <input type="radio" name="size" value="small">
+           
+                      <label>Small</label>
+           
+                    </div>
+           
+                  </div>
+           
+                  <div class="field">
+           
+                    <div class="ui radio checkbox">
+           
+                      <input type="radio" name="size" value="medium">
+           
+                      <label>Medium</label>
+           
+                    </div>
+           
+                  </div>
+           
+                  <div class="field">
+           
+                    <div class="ui radio checkbox">
+           
+                      <input type="radio" name="size" value="large">
+           
+                      <label>Large</label>
+           
+                    </div>
+           
+                  </div>
+           
+                  <div class="field">
+           
+                    <div class="ui radio checkbox">
+           
+                      <input type="radio" name="size" value="x-large">
+           
+                      <label>X-Large</label>
+           
+                    </div>
+           
+                  </div>
+           
+                </div>
+           
+              </div>
+           
+            </div>
+          
+          </div>
+        
+        <div class="item">
+        
+          <a class="title">
+        
+            <i class="dropdown icon"></i>
+        
+            Colors
+        
+          </a>
+        
+        <div class="content">
+        
+          <div class="ui form">
+        
+            <div class="grouped fields">
+        
+              <div class="field">
+        
+                <div class="ui radio checkbox">
+        
+                  <input type="checkbox" name="red">
+        
+                  <label>Red</label>
+        
+                </div>
+        
+              </div>
+        
+              <div class="field">
+        
+                <div class="ui radio checkbox">
+        
+                  <input type="checkbox" name="orange">
+        
+                  <label>Orange</label>
+        
+                </div>
+        
+              </div>
+
+              <div class="field">
+        
+                <div class="ui radio checkbox">
+        
+                  <input type="checkbox" name="yellow">
+        
+                  <label>Yellow</label>
+        
+                </div>
+        
+              </div>
+        
+              <div class="field">
+        
+                <div class="ui radio checkbox">
+        
+                  <input type="checkbox" name="green">
+        
+                  <label>Green</label>
+        
+                </div>
+        
+              </div>
+        
+              <div class="field">
+        
+                <div class="ui radio checkbox">
+        
+                  <input type="checkbox" name="blue">
+        
+                  <label>Blue</label>
+        
+                </div>
+              
+              </div>
+
+              <div class="field">
+        
+                <div class="ui radio checkbox">
+        
+                  <input type="checkbox" name="purple">
+        
+                  <label>Purple</label>
+        
+                </div>
+              
+              </div>
+
+              <div class="field">
+        
+                <div class="ui radio checkbox">
+        
+                  <input type="checkbox" name="pink">
+        
+                  <label>Pink</label>
+        
+                </div>
+              
+              </div>
+
+              <div class="field">
+        
+                <div class="ui radio checkbox">
+        
+                  <input type="checkbox" name="black">
+        
+                  <label>Black</label>
+        
+                </div>
+              
+              </div>
+            
+            </div>
+        
+          </div>
+        
+        </div>
+        
+      </div>
 
           <input class="submit" type="submit" id="submitItem" value="Submit">
 
@@ -316,10 +441,7 @@
 
 
 
-      $(document).ready(function() {
-        $('.ui.accordion')
-         .accordion()
-
+      $(document).ready(function() {      
     $.ajax({
         url: "/api/getitems?lost=0"
     }).then(function(res, err) {
