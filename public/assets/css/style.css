@@ -1,0 +1,184 @@
+body {
+
+	background-color: #772D8B;
+
+}
+
+caption {
+
+  font-family: 'Expletus Sans', cursive;
+
+}
+
+h3{
+
+  font-family: 'Expletus Sans', cursive;
+
+}
+
+#blurb{
+
+  font-family: 'Expletus Sans', cursive;
+  border: 2px solid #A1EF8B;
+  margin: 10px;
+  border-radius: 5px;
+  text-align: center;
+  align-content: center;
+
+}
+
+p {
+
+	color: #FCD0A1;
+  font-family: 'Baloo Bhaijaan', cursive;
+  font-size: 150%;
+}
+
+p {
+
+}
+
+.featurette-image{
+    height: 350px;
+    width: 400px;
+    border: 2px solid #A1EF8B;
+  }
+
+.title {
+
+	color: #A1EF8B;
+
+}
+
+#imageContainer{
+  height:100%;
+  width: 100%;
+}
+
+#headerImage{
+  align-content: center;
+  height:200px;
+  width: 700px;
+  border-width: 3px;
+  border-color: #A1EF8B;
+  background-image: url("images/logo.jpg");
+  background-repeat: no-repeat;
+
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+  font-family: 'Expletus Sans', cursive;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.navbar-toggle{
+	border: none;
+	background: transparent;
+	cursor: pointer;
+  font-family: 'Expletus Sans', cursive;
+}
+
+table {
+  font-family: 'Expletus Sans', sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #A1EF8B;
+  text-align: left;
+  padding: 15px;
+  font-family: 'Expletus Sans', cursive;
+}
+
+.submit {
+  display: block;
+  font-family: 'Expletus Sans', cursive;
+}
+
+caption {
+  background-color: #5A0B4D;
+  color: white;
+  font-size: 20px;
+  padding-left: 20px;
+  font-family: 'Expletus Sans', cursive;
+  text-align: center;
+}
+
+.heading {
+  background-color: #53917E;
+  color: white;
+  font-family: 'Expletus Sans', cursive;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+  margin-top: 0px;
+}
+
+.formHead {
+  padding: 10px;
+}
+
+#addItem {
+  font-family: 'Expletus Sans', cursive;
+  border: 2px solid #A1EF8B;
+  margin: 10px;
+  border-radius: 5px;
+  background-image: url("images/home.jpg"); 
+  background-size: 1200px 1200px;
+  background-repeat: repeat;
+}
+
+#stuffLost, #stuffFound {
+  font-family: 'Expletus Sans', cursive;
+  border: 2px solid #A1EF8B;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.formHead {
+  padding: 10px;
+}
+
+h1 {
+  background-color: #53917E;
+  color: #92D5E6;
+  font-family: 'Expletus Sans', cursive;
+  text-align: center;
+  margin-top: 0px;
+  padding: 20px;
+}
+
+
+
+.submit {
+  border: none;
+  background-color: #53917E;
+  padding: 10px;
+  color: white;
+  margin-top: 30px;
+  border-radius: 5px;
+  width: 100%;
+  font-family: 'Expletus Sans', cursive;
+}
+
+#mapDisplay{
+	
+	align-content: center;
+	float: center;
+}
+
+#map {
+
+  align-content: center;
+  height: 400px;
+  width: 100%;
+  float: center;
+
+}

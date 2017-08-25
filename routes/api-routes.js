@@ -17,7 +17,7 @@ module.exports = function(app) {
 
 
   app.post("/api/postitem", function(req, res) {
-    db.Stuff.create({
+    db.stuff.create({
       itemtype: req.body.itemtype,
       size: req.body.size,
       color: req.body.color,
@@ -32,7 +32,7 @@ module.exports = function(app) {
 
 
   app.delete("/api/stuff/:id", function(req, res) {
-    db.Stuff.destroy({
+    db.stuff.destroy({
       where: {
         id: req.params.id
       }
