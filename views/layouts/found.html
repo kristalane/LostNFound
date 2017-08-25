@@ -192,6 +192,8 @@
       }
 
       $(document).ready(function() {
+        
+
     $.ajax({
         url: "/api/getitems?lost=1"
     }).then(function(res, err) {
@@ -216,7 +218,7 @@ $("#submitItem").click(function(){
        itemtype: $("#type").val(),
        size: $("#size").val(),
        color: $("#color").val(),
-       // attribute: $("#type").val(),
+       attribute: $("#type").val(),
        location: $("#location").val()
     }
 

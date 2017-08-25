@@ -81,6 +81,8 @@
 
           <th class='title'>Color</th>
 
+          <th class='title'>Attribute</th>
+
           <th class='title'>Location</th>
 
         </tr>
@@ -315,6 +317,9 @@
 
 
       $(document).ready(function() {
+        $('.ui.accordion')
+         .accordion()
+
     $.ajax({
         url: "/api/getitems?lost=0"
     }).then(function(res, err) {
@@ -342,7 +347,7 @@ $("#submitItem").click(function(){
        itemtype: $("#type").val(),
        size: $("#size").val(),
        color: $("#color").val(),
-       // attribute: $("#type").val(),
+       attribute: $("#type").val(),
        location: $("#location").val()
     }
 
