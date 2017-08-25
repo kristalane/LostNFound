@@ -77,6 +77,7 @@
     <div class="row" id='stuffLost'>
 
       <table id='content'>
+      	
 
         <caption>Lost</caption>
 
@@ -93,7 +94,9 @@
           <th class='title'>Location</th>
 
         </tr>
-
+        
+        <tbody id="items">
+		</tbody>
       </table>
 
     </div>
@@ -439,9 +442,7 @@
         });
       }
 
-
-
-      $(document).ready(function() {      
+    $(document).ready(function() {
     $.ajax({
         url: "/api/getitems?lost=0"
     }).then(function(res, err) {
@@ -452,8 +453,8 @@
             var tr = $('<tr>').append(
                 $('<td>').text(items[i].itemtype),
                 $('<td>').text(items[i].size),
-                $('<td>').text(items[i].color)
-                // $('<td>').text(items[i].location)
+                $('<td>').text(items[i].color),
+                $('<td>').text(items[i].location)
             );
             $(tr).appendTo(tbody);
         }
