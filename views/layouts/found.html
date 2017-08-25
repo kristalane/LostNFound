@@ -208,9 +208,32 @@
             $(tr).appendTo(tbody);
         }
     })
+
+$("#submitItem").click(function(){
+    console.log("clicked")
+      event.preventDefault();
+      var itemLost = {
+       itemtype: $("#type").val(),
+       size: $("#size").val(),
+       color: $("#color").val(),
+       // attribute: $("#type").val(),
+       location: $("#location").val()
+    }
+
+    $.ajax({
+      data: itemLost,
+      type: "post",
+      url: "/api/postitem?lost=0"
+    }).then(function(res, err){
+      console.log(res)
+    })    
+});
+
+
+
 })
 
-//Lost1 = true  Lost2 = false
+//Lost1 = true  Lost0 = false
 
 </script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKgqILnUfcbks-G_f0KfFU-ENQ4fod09E&callback=initMap">
