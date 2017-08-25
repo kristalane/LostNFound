@@ -155,6 +155,10 @@ h1 {
   padding: 20px;
 }
 
+.ui.vertical.accordion.menu{
+  margin-left: 43%;
+}
+
 
 
 .submit {
