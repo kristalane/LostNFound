@@ -61,7 +61,7 @@ p {
   width: 700px;
   border-width: 3px;
   border-color: #A1EF8B;
-  background-image: url("assets/images/logo.jpg");
+  background-image: url("../images/logo.jpg");
   background-repeat: no-repeat;
 
 }
@@ -130,7 +130,7 @@ caption {
   border: 2px solid #A1EF8B;
   margin: 10px;
   border-radius: 5px;
-  background-image: url("assets/images/home.jpg"); 
+  background-image: url("../images/home.jpg"); 
   background-size: 1200px 1200px;
   background-repeat: repeat;
 }
