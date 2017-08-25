@@ -3,6 +3,7 @@
 // =============================================================
 var path = require("path");
 var db = require("../models");
+var lol = require('lol');
 
 // Routes
 // =============================================================
@@ -13,6 +14,7 @@ module.exports = function(app) {
 // this is the root/home page.
 
   app.get("/", function(req, res){
+    console.log(lol());
     console.log("here")
     res.sendFile(path.resolve(path.join(__dirname, "..", "views", "layouts", "home.html")));
   })
@@ -21,6 +23,7 @@ module.exports = function(app) {
 
 
   app.get("/lost", function(req, res) {
+    console.log(lol());
     console.log("here lost")
     res.sendFile(path.resolve(path.join(__dirname, "..", "views", "layouts", "lost.html")))
   });
@@ -28,6 +31,7 @@ module.exports = function(app) {
 // this route is for a user who says they found an item - will display all lost items
 
   app.get("/found", function(req, res){
+    console.log(lol());
     console.log("here found")
     res.sendFile(path.resolve(path.join(__dirname, "..", "views", "layouts", "found.html")))
   });
