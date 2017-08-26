@@ -17,14 +17,18 @@ module.exports = function(app) {
 
 
   app.post("/api/postitem", function(req, res) {
+    console.log(req)
     db.stuff.create({
+
+
       itemtype: req.body.itemtype,
-      size: req.body.size,
       color: req.body.color,
-      location:req.body.location,
-      attrib: req.body.attrib,
-      lost: req.body.isLost
-    }).then(function(dbStuff) {
+      size: req.body.size,
+      attrib: req.body.attribute,
+      lost: req.body.isLost,
+      location: req.body.location  
+      
+      }).then(function(dbStuff) {
       res.json(dbStuff);
     });
   });
