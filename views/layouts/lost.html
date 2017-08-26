@@ -379,6 +379,40 @@
                 </div>
               
               </div>
+
+              <div class="item">
+            
+                <a class="active title">
+            
+                  <i class="dropdown icon"></i>
+            
+                  Location
+            
+                </a>
+                
+                <div class="active content">
+                
+                  <div class="ui form">
+                
+                    <div class="grouped fields">
+                
+                      <div class="field">
+                
+                        <div class="ui">
+                
+                          <input type="input" name="location" id="location">
+                
+                        </div>
+                
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                </div>
+              
+              </div>
           
           <input class="submit" type="submit" name="submitItem" value="Submit" id="submitItem">
   
@@ -487,7 +521,7 @@ var selections = $('input:checked').each(function() { console.log($(this).val())
        size: selections[1].value,
        color: selections[2].value,
        attribute: selections[3].value,
-       // location: selections[4].value
+       location: $("#location").val()
     }
     console.log(itemLost)
     $.ajax({
@@ -496,6 +530,9 @@ var selections = $('input:checked').each(function() { console.log($(this).val())
       url: "/api/postitem?lost=1"
     }).then(function(res, err){
       console.log(res)
+      $(".form").each(function(){
+        this.reset();
+      })
     })    
 });
 
