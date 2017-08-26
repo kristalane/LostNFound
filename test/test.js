@@ -1,6 +1,8 @@
 var should = require('chai').should();
-const Nightmare = require('nightmare')
-const nightmare = Nightmare({ show: true })
+const Nightmare = require('nightmare');
+const nightmare = Nightmare({ show: true });
+
+
 
 // testing front end user features. What happens when input is submitted.
 describe("claimMatch", function(){
@@ -12,9 +14,6 @@ describe("claimMatch", function(){
   it("should fail if unique attribute and submitted answer is unequal", function() {
     claimMatch('Patterned').should.not.equal('Solid')
   });
-
-
-});
 
 // test for home page to lost page, to adding an item to the database.
 
@@ -42,3 +41,4 @@ nightmare
     .catch(function (error) {
       console.error('Error:', error);
     });
+});
