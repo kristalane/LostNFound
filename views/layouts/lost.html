@@ -208,7 +208,7 @@
                 
                         <div class="ui radio checkbox">
                 
-                          <input type="radio" name="size" value="small">
+                          <input type="radio" name="size" value="S">
                 
                           <label>Small</label>
                 
@@ -220,7 +220,7 @@
                 
                         <div class="ui radio checkbox">
                 
-                          <input type="radio" name="size" value="medium">
+                          <input type="radio" name="size" value="M">
                 
                           <label>Medium</label>
                 
@@ -232,7 +232,7 @@
                 
                         <div class="ui radio checkbox">
                 
-                          <input type="radio" name="size" value="large">
+                          <input type="radio" name="size" value="L">
                 
                           <label>Large</label>
                 
@@ -244,7 +244,7 @@
                 
                         <div class="ui radio checkbox">
                 
-                          <input type="radio" name="size" value="x-large">
+                          <input type="radio" name="size" value="XL">
                 
                           <label>X-Large</label>
                 
@@ -380,7 +380,7 @@
               
               </div>
           
-          <input class="submit" type="submit" name="Submit" value="Submit">
+          <input class="submit" type="submit" name="submitItem" value="Submit" id="submitItem">
   
         </div>
 
@@ -470,12 +470,41 @@
             $(tr).appendTo(tbody);
         }
     })
+
+
+
+    $("#submitItem").click(function(){
+    console.log("clicked")
+      event.preventDefault();
+
+
+var selections = $('input:checked').each(function() { console.log($(this).val()); });
+
+
+
+      var itemLost = {
+       itemtype: selections[0].value,
+       size: selections[1].value,
+       color: selections[2].value,
+       attribute: selections[3].value,
+       // location: selections[4].value
+    }
+    console.log(itemLost)
+    $.ajax({
+      data: itemLost,
+      type: "post",
+      url: "/api/postitem?lost=1"
+    }).then(function(res, err){
+      console.log(res)
+    })    
+});
+
 })
 //Lost1 = true  Lost0 = false
 </script>
 
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKgqILnUfcbks-G_f0KfFU-ENQ4fod09E&callback=initMap">
-</script>
+<!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKgqILnUfcbks-G_f0KfFU-ENQ4fod09E&callback=initMap">
+</script> -->
 
     
 
