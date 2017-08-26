@@ -7,11 +7,11 @@ module.exports = function(app) {
     console.log(req.query.lost)
     db.stuff.findAll({
       where: {
-          lost: req.query.lost
-      } 
+        lost: req.query.lost
+      }
     }).then(function(dbStuff) {
-          res.json(dbStuff);
-      });
+      res.json(dbStuff);
+    });
   });
 
 
@@ -26,9 +26,9 @@ module.exports = function(app) {
       size: req.body.size,
       attrib: req.body.attribute,
       lost: req.body.isLost,
-      location: req.body.location  
-      
-      }).then(function(dbStuff) {
+      location: req.body.location
+
+    }).then(function(dbStuff) {
       res.json(dbStuff);
     });
   });

@@ -3,52 +3,48 @@
 
 <head>
 
-    <title>Lost</title>
+  <title>Lost</title>
 
-    <!-- Load jquery PRIOR to bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <!-- Load jquery PRIOR to bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
-    <!-- Load Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Load Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    <script>
-        window.jQuery || document.write('<script src="../../assets/js/vendor/ jquery.min.js"><\/script>')
-    </script>
+  <!--Google Fonts-->
 
-    <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Expletus+Sans" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css?family=Expletus+Sans" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan" rel="stylesheet">
 
 
-    <!-- Load Semantic-->
+  <!-- Load Semantic-->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css"></link>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css"></link>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/components/accordion.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/components/accordion.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/components/accordion.min.css"></link>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/components/accordion.min.css"></link>
 
-    <!-- Load our css -->
-    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+  <!-- Load our css -->
+  <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
 
 
 </head>
 
 <body background>
-  
-<div class="container">
-      
-  <nav class="navbar" role="navigation">
 
-        <div class="navbar-header">
+  <div class="container">
 
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+    <nav class="navbar" role="navigation">
+
+      <div class="navbar-header">
+
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
 
             <span class="sr-only">Toggle navigation</span>
 
@@ -60,406 +56,409 @@
 
           </button>
 
-        </div>
+      </div>
 
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
 
-          <ul class="nav navbar-nav">
+        <ul class="nav navbar-nav">
 
-            <li><a href="/">Home</a></li>
+          <li><a href="/">Home</a></li>
 
-            <li><a href="lost">Lost</a></li>
+          <li><a href="lost">Lost</a></li>
 
-            <li><a href="found">Found</a></li>
+          <li><a href="found">Found</a></li>
 
-          </ul>
+        </ul>
 
-        </div>
+      </div>
 
-  </nav>
+    </nav>
 
-</div>
+  </div>
 
   <div class="container">
-  
+
     <div class="row" id='stuffFound'>
-      
+
       <table id='content'>
-      
+
         <caption>Lost</caption>
-      
+
         <tr>
-        
+
           <th class='title'>Type</th>
-          
+
           <th class='title'>Size</th>
-          
+
           <th class='title'>Color</th>
-          
+
           <th class='title'>Location</th>
-        
+
         </tr>
 
         <tbody id="items">
-        <!-- tbody content handled by js DO NOT DELETE-->
+          <!-- tbody content handled by js DO NOT DELETE-->
         </tbody>
 
       </table>
 
     </div>
 
-      <div class="row" id='addItem'>
-  
-        <h3 class='heading'>Add Item</h3>
-  
-          <div class="formHead">
-            
-            <div class="ui vertical accordion menu">
-            
-              <div class="item">
-            
-                <a class="active title">
+    <div class="row" id='addItem'>
+
+      <h3 class='heading'>Add Item</h3>
+
+      <div class="formHead">
+
+        <div class="ui vertical accordion menu">
+
+          <div class="item">
+
+            <a class="active title">
             
                   <i class="dropdown icon"></i>
             
                   Type
             
                 </a>
-            
-                <div class="active content">
-            
-                  <div class="ui form">
-            
-                    <div class="grouped fields">
-            
-                      <div class="field">
-            
-                        <div class="ui radio checkbox">
-            
-                          <input type="radio" name="type" value="jacket">
-            
-                          <label>Jacket</label>
-            
-                        </div>
-            
-                      </div>
-            
-                      <div class="field">
-            
-                        <div class="ui radio checkbox">
-            
-                          <input type="radio" name="type" value="shirt">
-            
-                          <label>Shirt</label>
-            
-                        </div>
-            
-                      </div>
-            
-                      <div class="field">
-            
-                        <div class="ui radio checkbox">
-            
-                          <input type="radio" name="type" value="scarf">
-            
-                          <label>Scarf</label>
-            
-                        </div>
-            
-                      </div>
-            
-                      <div class="field">
-            
-                        <div class="ui radio checkbox">
-            
-                          <input type="radio" name="type" value="sweater">
-            
-                          <label>Sweater</label>
-            
-                        </div>
-            
-                      </div>
-            
+
+            <div class="active content">
+
+              <div class="ui form">
+
+                <div class="grouped fields">
+
+                  <div class="field">
+
+                    <div class="ui radio checkbox">
+
+                      <input type="radio" name="type" value="jacket">
+
+                      <label>Jacket</label>
+
                     </div>
-            
+
                   </div>
-            
+
+                  <div class="field">
+
+                    <div class="ui radio checkbox">
+
+                      <input type="radio" name="type" value="shirt">
+
+                      <label>Shirt</label>
+
+                    </div>
+
+                  </div>
+
+                  <div class="field">
+
+                    <div class="ui radio checkbox">
+
+                      <input type="radio" name="type" value="scarf">
+
+                      <label>Scarf</label>
+
+                    </div>
+
+                  </div>
+
+                  <div class="field">
+
+                    <div class="ui radio checkbox">
+
+                      <input type="radio" name="type" value="sweater">
+
+                      <label>Sweater</label>
+
+                    </div>
+
+                  </div>
+
                 </div>
-            
+
               </div>
-            
-              <div class="item">
-            
-                <a class="active title">
+
+            </div>
+
+          </div>
+
+          <div class="item">
+
+            <a class="active title">
             
                   <i class="dropdown icon"></i>
             
                   Size
             
                 </a>
-                
-                <div class="active content">
-                
-                  <div class="ui form">
-                
-                    <div class="grouped fields">
-                
-                      <div class="field">
-                
-                        <div class="ui radio checkbox">
-                
-                          <input type="radio" name="size" value="S">
-                
-                          <label>Small</label>
-                
-                        </div>
-                
-                      </div>
-                
-                      <div class="field">
-                
-                        <div class="ui radio checkbox">
-                
-                          <input type="radio" name="size" value="M">
-                
-                          <label>Medium</label>
-                
-                        </div>
-                
-                      </div>
-                
-                      <div class="field">
-                
-                        <div class="ui radio checkbox">
-                
-                          <input type="radio" name="size" value="L">
-                
-                          <label>Large</label>
-                
-                        </div>
-                
-                      </div>
-                
-                      <div class="field">
-                
-                        <div class="ui radio checkbox">
-                
-                          <input type="radio" name="size" value="XL">
-                
-                          <label>X-Large</label>
-                
-                        </div>
-                
-                      </div>
-                
+
+            <div class="active content">
+
+              <div class="ui form">
+
+                <div class="grouped fields">
+
+                  <div class="field">
+
+                    <div class="ui radio checkbox">
+
+                      <input type="radio" name="size" value="S">
+
+                      <label>Small</label>
+
                     </div>
-                
+
                   </div>
-                
+
+                  <div class="field">
+
+                    <div class="ui radio checkbox">
+
+                      <input type="radio" name="size" value="M">
+
+                      <label>Medium</label>
+
+                    </div>
+
+                  </div>
+
+                  <div class="field">
+
+                    <div class="ui radio checkbox">
+
+                      <input type="radio" name="size" value="L">
+
+                      <label>Large</label>
+
+                    </div>
+
+                  </div>
+
+                  <div class="field">
+
+                    <div class="ui radio checkbox">
+
+                      <input type="radio" name="size" value="XL">
+
+                      <label>X-Large</label>
+
+                    </div>
+
+                  </div>
+
                 </div>
-              
+
               </div>
-              
-              <div class="item">
-              
-                <a class="title">
+
+            </div>
+
+          </div>
+
+          <div class="item">
+
+            <a class="title">
               
                   <i class="dropdown icon"></i>
               
                   Color
               
                 </a>
-              
-                <div class="content">
-              
-                  <div class="ui form">
-              
-                    <div class="grouped fields">
-              
-                      <div class="field">
-              
-                        <div class="ui radio checkbox">
-              
-                          <input type="radio" name="color" value="red">
-              
-                          <label>Red</label>
-              
-                        </div>
-              
-                      </div>
-              
-                      <div class="field">
-              
-                        <div class="ui radio checkbox">
-              
-                          <input type="radio" name="color" value="yellow">
-              
-                          <label>Yellow</label>
-              
-                        </div>
-              
-                      </div>
-              
-                      <div class="field">
-              
-                        <div class="ui radio checkbox">
-              
-                          <input type="radio" name="color" value="green">
-              
-                          <label>Green</label>
-              
-                        </div>
-              
-                      </div>
-              
-                      <div class="field">
-              
-                        <div class="ui radio checkbox">
-              
-                          <input type="radio" name="color" value="blue">
-              
-                          <label>Blue</label>
-              
-                        </div>
-              
-                      </div>
-              
+
+            <div class="content">
+
+              <div class="ui form">
+
+                <div class="grouped fields">
+
+                  <div class="field">
+
+                    <div class="ui radio checkbox">
+
+                      <input type="radio" name="color" value="red">
+
+                      <label>Red</label>
+
                     </div>
-              
+
                   </div>
-              
+
+                  <div class="field">
+
+                    <div class="ui radio checkbox">
+
+                      <input type="radio" name="color" value="yellow">
+
+                      <label>Yellow</label>
+
+                    </div>
+
+                  </div>
+
+                  <div class="field">
+
+                    <div class="ui radio checkbox">
+
+                      <input type="radio" name="color" value="green">
+
+                      <label>Green</label>
+
+                    </div>
+
+                  </div>
+
+                  <div class="field">
+
+                    <div class="ui radio checkbox">
+
+                      <input type="radio" name="color" value="blue">
+
+                      <label>Blue</label>
+
+                    </div>
+
+                  </div>
+
                 </div>
 
               </div>
 
-              <div class="item">
-            
-                <a class="active title">
+            </div>
+
+          </div>
+
+          <div class="item">
+
+            <a class="active title">
             
                   <i class="dropdown icon"></i>
             
                   Attribute
             
                 </a>
-                
-                <div class="active content">
-                
-                  <div class="ui form">
-                
-                    <div class="grouped fields">
-                
-                      <div class="field">
-                
-                        <div class="ui radio checkbox">
-                
-                          <input type="radio" name="attribute" value="patterned">
-                
-                          <label>Patterned</label>
-                
-                        </div>
-                
-                      </div>
-                
-                      <div class="field">
-                
-                        <div class="ui radio checkbox">
-                
-                          <input type="radio" name="attribute" value="solid">
-                
-                          <label>Solid</label>
-                
-                        </div>
-                
-                      </div>
-                
+
+            <div class="active content">
+
+              <div class="ui form">
+
+                <div class="grouped fields">
+
+                  <div class="field">
+
+                    <div class="ui radio checkbox">
+
+                      <input type="radio" name="attribute" value="patterned">
+
+                      <label>Patterned</label>
+
                     </div>
-                
+
                   </div>
-                
+
+                  <div class="field">
+
+                    <div class="ui radio checkbox">
+
+                      <input type="radio" name="attribute" value="solid">
+
+                      <label>Solid</label>
+
+                    </div>
+
+                  </div>
+
                 </div>
-              
+
               </div>
 
-              <div class="item">
-            
-                <a class="active title">
+            </div>
+
+          </div>
+
+          <div class="item">
+
+            <a class="active title">
             
                   <i class="dropdown icon"></i>
             
                   Location
             
                 </a>
-                
-                <div class="active content">
-                
-                  <div class="ui form">
-                
-                    <div class="grouped fields">
-                
-                      <div class="field">
-                
-                        <div class="ui">
-                
-                          <input type="input" name="location" id="location">
-                
-                        </div>
-                
-                      </div>
-                
+
+            <div class="active content">
+
+              <div class="ui form">
+
+                <div class="grouped fields">
+
+                  <div class="field">
+
+                    <div class="ui">
+
+                      <input type="input" name="location" id="location">
+
                     </div>
-                
+
                   </div>
-                
+
                 </div>
-              
+
               </div>
-          
+
+            </div>
+
+          </div>
+
           <input class="submit" type="submit" name="submitItem" value="Submit" id="submitItem">
-  
+
         </div>
 
-    </div>
+      </div>
 
-  </div>
+    </div>
 
     <div class="container">
 
-  <div class="row">
+      <div class="row">
 
-    <div id="floating-panel">
+        <div id="floating-panel">
 
-      <input id="address" type="textbox" value="San Francisco">
+          <input id="address" type="textbox" value="San Francisco">
 
-      <input id="submit" type="button" value="Geocode">
-      
-    </div> 
+          <input id="submit" type="button" value="Geocode">
 
-  </div>
+        </div>
 
-</div>
+      </div>
 
-</div>
-
-<div class="container">
-
-  <div class="row">
-
-    <div class="col-lg-12" id="mapDisplay">
-
-      <div id="map"></div>
-    
     </div>
 
   </div>
 
-</div>
+  <div class="container">
 
-<script>
+    <div class="row">
+
+      <div class="col-lg-12" id="mapDisplay">
+
+        <div id="map"></div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script>
 
       function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 12,
-          center: {lat: 37.7936684, lng: -122.3957547}
+          center: {
+            lat: 37.7936684,
+            lng: -122.3957547
+          }
         });
         var geocoder = new google.maps.Geocoder();
         document.getElementById('submit').addEventListener('click', function() {
@@ -470,7 +469,9 @@
       function geocodeAddress(geocoder, resultsMap) {
         console.log(geocoder, resultsMap)
         var address = document.getElementById('address').value;
-        geocoder.geocode({'address': address}, function(results, status) {
+        geocoder.geocode({
+          'address': address
+        }, function(results, status) {
           if (status === 'OK') {
             resultsMap.setCenter(results[0].geometry.location);
             var marker = new google.maps.Marker({
@@ -486,62 +487,62 @@
 
       $(document).ready(function() {
         $('.ui.accordion').accordion();
-         $('.ui.checkbox').checkbox();
+        $('.ui.checkbox').checkbox();
 
-    $.ajax({
-        url: "/api/getitems?lost=0"
-    }).then(function(res, err) {
-        console.log(res)
-        var items = res
-        var tbody = $('#items');
-        for (i in items) {
+        $.ajax({
+          url: "/api/getitems?lost=0"
+        }).then(function(res, err) {
+          console.log(res)
+          var items = res
+          var tbody = $('#items');
+          for (i in items) {
             var tr = $('<tr>').append(
-                $('<td>').text(items[i].itemtype),
-                $('<td>').text(items[i].size),
-                $('<td>').text(items[i].color),
-                $('<td>').text(items[i].location)
+              $('<td>').text(items[i].itemtype),
+              $('<td>').text(items[i].size),
+              $('<td>').text(items[i].color),
+              $('<td>').text(items[i].location)
             );
             $(tr).appendTo(tbody);
-        }
-    })
+          }
+        })
 
 
 
-    $("#submitItem").click(function(){
-    console.log("clicked")
-      event.preventDefault();
+        $("#submitItem").click(function() {
+          console.log("clicked")
+          event.preventDefault();
 
 
-var selections = $('input:checked').each(function() { console.log($(this).val()); });
+          var selections = $('input:checked').each(function() {
+            console.log($(this).val());
+          });
 
 
+          var itemLost = {
+            itemtype: selections[0].value,
+            size: selections[1].value,
+            color: selections[2].value,
+            attribute: selections[3].value,
+            location: $("#location").val()
+          }
+          console.log(itemLost)
+          $.ajax({
+            data: itemLost,
+            type: "post",
+            url: "/api/postitem?lost=1"
+          }).then(function(res, err) {
+            console.log(res)
+            $('.ui.form').empty()
+            alert("Thank you for submitting your item. Hope it's found soon!")
+          })
+        });
 
-      var itemLost = {
-       itemtype: selections[0].value,
-       size: selections[1].value,
-       color: selections[2].value,
-       attribute: selections[3].value,
-       location: $("#location").val()
-    }
-    console.log(itemLost)
-    $.ajax({
-      data: itemLost,
-      type: "post",
-      url: "/api/postitem?lost=1"
-    }).then(function(res, err){
-      console.log(res)
-      $(".form").each(function(){
-        this.reset();
       })
-    })    
-});
-
-})
 //Lost1 = true  Lost0 = false
 </script>
 
-<!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKgqILnUfcbks-G_f0KfFU-ENQ4fod09E&callback=initMap">
-</script> -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKgqILnUfcbks-G_f0KfFU-ENQ4fod09E&callback=initMap">
+</script>
 
     
 
